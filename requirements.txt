@@ -1,0 +1,45 @@
+# ── Core Framework ────────────────────────────────────────────────────────────
+streamlit==1.42.0
+
+# ── LangChain Ecosystem ───────────────────────────────────────────────────────
+# All packages pinned within the 0.3.x ecosystem for cross-compatibility.
+# langchain-chroma 0.2.3 requires langchain-core>=0.3.52.
+langchain>=0.3.14,<0.4.0
+langchain-core>=0.3.52,<0.4.0
+langchain-community>=0.3.14,<0.4.0
+
+# ── Gemini Integration ────────────────────────────────────────────────────────
+# langchain-google-genai 2.0.8 is the last 2.x release; it is fully compatible
+# with langchain-core 0.3 and relies on the legacy google-generativeai SDK.
+# DO NOT upgrade to 3.x / 4.x without also switching to google-genai (new SDK).
+langchain-google-genai==2.0.8
+google-generativeai==0.8.3
+
+# ── ChromaDB Integration ──────────────────────────────────────────────────────
+# langchain-chroma is the dedicated, non-deprecated integration package.
+# 0.2.3 is compatible with langchain-core 0.3.x and chromadb 0.6.x.
+langchain-chroma==0.2.3
+chromadb==0.6.3
+
+# ── HuggingFace Embeddings ────────────────────────────────────────────────────
+# langchain-huggingface is the dedicated, actively maintained integration.
+# 0.1.2 is compatible with langchain-core 0.3 and sentence-transformers 3.x.
+langchain-huggingface==0.1.2
+sentence-transformers==3.4.0
+
+# ── PDF Processing ────────────────────────────────────────────────────────────
+PyMuPDF==1.25.2
+
+# ── Presentation Generation ───────────────────────────────────────────────────
+python-pptx==1.0.2
+
+# ── Data Validation & Structured Output ──────────────────────────────────────
+pydantic==2.10.6
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+requests>=2.31.0
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.3.4
+pytest-mock==3.14.0

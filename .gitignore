@@ -1,0 +1,43 @@
+# ── Secrets ──────────────────────────────────────────────────────────────────
+.env
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── ChromaDB Vector Store ─────────────────────────────────────────────────────
+chroma_store/
+
+# ── Uploaded PDFs & Generated Files ──────────────────────────────────────────
+uploads/
+outputs/
+*.pdf
+!tests/data/sample_research_paper.pdf
+*.pptx
+
+# ── Testing & Logs ───────────────────────────────────────────────────────────
+.pytest_cache/
+*.log
+*.tmp
+
+# ── IDE & OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Streamlit Cache ───────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
