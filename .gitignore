@@ -26,6 +26,7 @@ outputs/
 *.pdf
 !tests/data/sample_research_paper.pdf
 *.pptx
+!docs/presentations/*.pptx
 
 # ── Testing & Logs ───────────────────────────────────────────────────────────
 .pytest_cache/
